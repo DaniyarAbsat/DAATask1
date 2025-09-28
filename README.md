@@ -18,7 +18,7 @@ On average: T(n) = T(pn) + T((1-p)n) + Θ(n), where p 1/2 is waiting.
 Using probabilistic analysis or Akra-Bazzi, we get Θ(n log n).
 Worst case (unlikely with random beer): 'Θ(n 2)'.
 
-#3. **Deterministic Select** (Median-of-Medians, O(n))
+##3. **Deterministic Select** (Median-of-Medians, O(n))
 
 **Architecture notes.**
 The array is divided into groups of 5 elements, each looking for a median. A recursive call to find the median of the median gives a good pico (  30% of the elements discarded). The recursion is always only one way (where k is), with a smaller part for depth control. The algorithm is executed in-place, so add. Memory is limited to O(1).
